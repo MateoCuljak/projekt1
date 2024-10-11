@@ -1,0 +1,151 @@
+/* Opći stilovi za tijelo stranice */
+body {
+    font-family: 'Roboto', sans-serif; /* Koristi Roboto font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Stil za header */
+header {
+    background-color: #343a40; /* Tamnosiva pozadina za header */
+    color: #fff; /* Bijela boja teksta */
+    padding: 10px 0; /* Padding za header */
+    margin-bottom: 20px; /* Razmak ispod headera */
+}
+
+/* Stil za navigaciju */
+.navbar-brand {
+    color: #fff !important; /* Bijela boja za naziv branda */
+}
+
+.nav-link {
+    color: #fff !important; /* Bijela boja za linkove u navigaciji */
+}
+
+.nav-link.active {
+    font-weight: bold; /* Bold za aktivni link */
+}
+
+.nav-link:hover {
+    color: #0056b3; /* Tamnija boja pri hoveru */
+    transition: color 0.3s ease; /* Glatka promjena boje */
+}
+
+/* Stil za video */
+iframe {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd; /* Svijetlosiva granica oko video sadržaja */
+    border-radius: 5px; /* Zaobljeni rubovi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Blago sjenčanje */
+}
+
+/* Stil za mapu */
+#map {
+    margin-top: 20px;
+    border-radius: 5px; /* Zaobljeni rubovi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Blago sjenčanje */
+}
+
+/* Stil za kontakt formu */
+#contact {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Blago sjenčanje */
+}
+
+/* Stil za formu */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Plava boja za fokusirana polja */
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25); /* Lagano sjenčanje */
+}
+
+/* Stil za dugme */
+.btn-primary {
+    background-color: #007bff; /* Plava boja za dugme */
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Tamnija plava boja pri hoveru */
+    border-color: #004085;
+}
+
+/* Stil za carousel */
+.carousel-item img {
+    border-radius: 5px; /* Zaobljeni rubovi za slike u carouselu */
+}
+
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(1); /* Bijele strelice za bolju vidljivost */
+}
+
+/* Stil za pretraživač */
+#search {
+    margin-top: 20px;
+    padding: 10px; /* Dodaj padding za pretraživač */
+    border-radius: 5px; /* Zaobljeni rubovi za pretraživač */
+    border: 1px solid #ddd; /* Granica oko pretraživača */
+}
+
+/* Stil za footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0; /* Veći padding za footer */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Blago sjenčanje na vrhu footera */
+}
+
+/* Stil za prijelaze */
+.btn-primary, .form-control {
+    transition: all 0.3s ease; /* Glatke promjene stanja */
+}
+
+/* Stil za mobilne uređaje */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem; /* Veći font za brend na manjim ekranima */
+    }
+
+    iframe, #map {
+        width: 100%; /* Širina za iframe i mapu na manjim ekranima */
+    }
+}
+
+/* Stilovi za sekciju "O Japanu" */
+#about h2 {
+    font-size: 2rem; /* Veličina fonta za naslove sekcija */
+    margin-bottom: 1rem; /* Razmak ispod naslova */
+}
+
+#about p {
+    font-size: 1rem; /* Veličina fonta za paragrafe */
+    margin-bottom: 1rem; /* Razmak ispod paragrafa */
+}
+
+#about img {
+    max-width: 100%; /* Prilagodba slike veličini ekrana */
+    height: auto; /* Očuvanje omjera slike */
+    border-radius: 5px; /* Zaobljeni rubovi za slike */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Blago sjenčanje slike */
+}
+
+/* Dodane klase za fade-in efekt */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Glatka animacija od 0 do 1 u trajanju od 1 sekunde */
+}
+
+.visible {
+    opacity: 1; /* Element postaje vidljiv */
+}

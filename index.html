@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Projekt o Japanu</title>
+
+    <!-- Dodavanje Bootswatch Cerulean teme -->
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/cerulean/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tvoj stilovi -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigacija -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Japan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Početna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">O Japanu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sadržaj -->
+    <div class="container mt-5">
+        <h1>Dobrodošli na stranicu o Japanu</h1>
+        <p>Ovdje možete saznati zanimljivosti o Japanu, njegovoj kulturi i povijesti.</p>
+
+        <!-- Dodavanje slika -->
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/map_sp (1).svg" class="img-fluid" alt="Mapa Japana">
+                <p>Mapa Japana</p>
+            </div>
+            <div class="col-md-4">
+                <img src="images/220922155226-japan-tourism-lifting-covid-restrictions.webp" class="img-fluid" alt="Turizam u Japanu">
+                <p>Turizam u Japanu</p>
+            </div>
+            <div class="col-md-4">
+                <img src="images/Fuji.jpg" class="img-fluid" alt="Planina Fuji">
+                <p>Planina Fuji</p>
+            </div>
+        </div>
+
+        <!-- Ugradnja YouTube videa -->
+        <div class="embed-responsive embed-responsive-16by9 mt-4">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0wEwhMGyXTY" allowfullscreen></iframe>
+        </div>
+
+        <!-- Carousel za slike -->
+        <div id="carouselExampleIndicators" class="carousel slide mt-4" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/map_sp (1).svg" class="d-block w-100" alt="Mapa Japana">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/220922155226-japan-tourism-lifting-covid-restrictions.webp" class="d-block w-100" alt="Turizam u Japanu">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Fuji.jpg" class="d-block w-100" alt="Planina Fuji">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-4">
+        <div class="container p-4">
+            <p>© 2024 Moja Web Stranica o Japanu</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
